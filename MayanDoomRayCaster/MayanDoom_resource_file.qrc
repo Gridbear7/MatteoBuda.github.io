@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="LogoBG">
+    <file>MayanDoomBGArtWide6.png</file>
+    <file>BG_ART.png</file>
+    <file>MayanDoomBGArt.png</file>
+    <file>MayanDoomBGArtWide4.png</file>
+  </qresource>
+</RCC>

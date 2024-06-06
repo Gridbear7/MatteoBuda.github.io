@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>49</y>
+     <width>600</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+	border-image: url(:/LogoBG/MayanDoomBGArtWide6.png) 0 0 0 0 stretch stretch;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton_player_mov_forward">
+    <property name="geometry">
+     <rect>
+      <x>69</x>
+      <y>101</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>🠝</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_player_rot_ccw">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>101</y>
+      <width>40</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>↶</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_player_mov_backward">
+    <property name="geometry">
+     <rect>
+      <x>69</x>
+      <y>201</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>🠟</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_player_mov_right">
+    <property name="geometry">
+     <rect>
+      <x>119</x>
+      <y>151</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>🠞</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_player_mov_left">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>151</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>🠜</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_player_rot_cw">
+    <property name="geometry">
+     <rect>
+      <x>119</x>
+      <y>101</y>
+      <width>40</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>↷</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_start">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>120</y>
+      <width>109</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Start</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_interact">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>160</y>
+      <width>109</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Interact</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_reset">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>200</y>
+      <width>109</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Reset</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_FOV">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>24</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #2e0000;  /* Dark red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d94141;  /* Red button background */
+    color: white;               /* White text color */
+    border: 2px solid #ff6f00;  /* Orange border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ff6f00;  /* Orange background on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>120</number>
+    </property>
+    <property name="singleStep">
+     <number>10</number>
+    </property>
+    <property name="value">
+     <number>40</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_FOV">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>31</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+
+border-image: transparent;
+
+}
+
+/* General widget styles */
+QWidget {
+    background-color: #2e0000;  /* Dark red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d94141;  /* Red button background */
+    color: white;               /* White text color */
+    border: 2px solid #ff6f00;  /* Orange border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ff6f00;  /* Orange background on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+	background: transparent;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>FOV:</string>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="spinBox_val_1">
+    <property name="geometry">
+     <rect>
+      <x>538</x>
+      <y>23</y>
+      <width>50</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #2e0000;  /* Dark red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d94141;  /* Red button background */
+    color: white;               /* White text color */
+    border: 2px solid #ff6f00;  /* Orange border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ff6f00;  /* Orange background on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="singleStep">
+     <double>0.100000000000000</double>
+    </property>
+    <property name="value">
+     <double>1.200000000000000</double>
+    </property>
+   </widget>
+   <widget class="QDoubleSpinBox" name="spinBox_val_2">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>23</y>
+      <width>50</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #2e0000;  /* Dark red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d94141;  /* Red button background */
+    color: white;               /* White text color */
+    border: 2px solid #ff6f00;  /* Orange border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ff6f00;  /* Orange background on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="singleStep">
+     <double>0.200000000000000</double>
+    </property>
+    <property name="value">
+     <double>7.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_help">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>78</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* General widget styles */
+QWidget {
+    background-color: #140000;  /* Darker red background */
+    color: #f7d774;             /* Warm yellow text color */
+    font-family: 'Arial';
+    font-size: 14px;
+}
+
+/* QPushButton styles */
+QPushButton {
+    background-color: #d23f00;  /* Darker red (lava) button background */
+    color: #f7d774;             /* Warm yellow text color */
+    border: 2px solid #ffae00;  /* Bright yellow border */
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffae00;  /* Bright yellow background on hover */
+    color: #140000;             /* Dark red text color on hover */
+}
+
+/* QLabel styles */
+QLabel {
+    font-size: 16px;            /* Slightly larger font for labels */
+    font-weight: bold;          /* Bold text */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>?</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTextEdit" name="textEdit_gamelog">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="MayanDoom_resource_file.qrc"/>
+ </resources>
+ <connections/>
+</ui>
