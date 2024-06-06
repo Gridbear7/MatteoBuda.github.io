@@ -10,8 +10,8 @@ Python Experiment: Mayan Doom
 
 Requirements:
 
--If Qt is not installed in your mayapy env, you will need to install it first in order to use this
--In MayanDoom_01.py you'll need to chaneg the file path variable to the location you placed this folder here:
+-If Qt is not installed in your mayapy env, you will need to install it first in order to use this ("PathToMayaFolder\bin\mayapy.exe" -m pip install Qt.py==1.3.6)
+-In MayanDoom_01.py you'll need to change the file path variable to the location you placed this programs folder here:
 dirpathstr = r'\path_to_folder\RayCaster_A'
 
 
