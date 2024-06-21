@@ -1,6 +1,6 @@
 Python Experiment: 3D Render Engine
 
-(Rendering, Raycasting, QT UI with Maya)
+(Rendering, 3D Projection, QT UI with Maya)
 
 
 
