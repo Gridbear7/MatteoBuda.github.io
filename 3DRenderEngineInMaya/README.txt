@@ -11,6 +11,7 @@ Python Experiment: 3D Render Engine
 Requirements:
 
 -If Qt is not installed in your mayapy env, you will need to install it first in order to use this ("PathToMayaFolder\bin\mayapy.exe" -m pip install Qt.py==1.3.6)
+-If Numpy is not installed in your mayapy env, you will need to install it first in order to use this ("PathToMayaFolder\bin\mayapy.exe" -m pip install numpy==1.26.1)
 -In 3DRenderEngineTool.py you'll need to change the file path variable to the location you placed this programs folder here:
 dirpathstr = r'\path_to_folder\3DRenderEngineInMaya'
 
