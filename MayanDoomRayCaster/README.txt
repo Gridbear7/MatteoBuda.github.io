@@ -7,7 +7,7 @@ Python Experiment: Mayan Doom
 [Warnings] Make sure you are in a blank scene as this will erase other existing objects in the scene upon startup
 
 
-Demonstration: https://www.youtube.com/watch?v=1MBP1x0osU4&t=6s
+Demonstration: https://youtu.be/1MBP1x0osU4?si=VkE39Q1Pa7fwQjw6
 
 
 Requirements:
